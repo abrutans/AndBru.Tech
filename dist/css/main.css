@@ -246,13 +246,15 @@ main {
   grid-gap: 20px; }
   .projects img {
     width: 100%;
-    border: 3px #fff solid; }
+    border: 3px #fff solid;
+    border-image-repeat: none; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
-  margin: 0.3rem; }
+  margin: 0.3rem;
+  text-align: center; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #c81d25;
     color: #333; }
@@ -268,11 +270,12 @@ main {
 .skillset {
   height: 100%;
   width: 100%;
-  position: relative;
+  text-align: center;
   z-index: 9999;
   top: 0;
   color: #fff;
-  background: #040303; }
+  background: #040303;
+  display: inline-block; }
   .skillset h2 {
     text-align: center; }
   .skillset .text,
@@ -291,9 +294,8 @@ main {
     background: #3a3335;
     height: 50%; }
   .skillset .techicons {
-    padding: 1rem;
+    padding: 2rem;
     margin: 0.6;
-    display: block;
     padding-bottom: 0.5rem;
     text-align: center;
     padding-top: 6rem; }

@@ -120,6 +120,7 @@ main {
   img {
     width: 100%;
     border: 3px #fff solid;
+    border-image-repeat: none;
   }
 }
 
@@ -128,6 +129,7 @@ main {
   padding: 0.5rem 1rem;
   border: 0;
   margin: 0.3rem;
+  text-align: center;
   &:hover {
     background: $secondary-color;
     color: set-text-color($secondary-color);
@@ -149,11 +151,12 @@ main {
 .skillset {
   height: 100%;
   width: 100%;
-  position: relative;
+  text-align: center;
   z-index: 9999;
   top: 0;
   color: set-text-color($primary-color);
   background: darken($primary-color, 20);
+  display: inline-block;
 
   & h2 {
     text-align: center;
@@ -180,9 +183,8 @@ main {
     height: 50%;
   }
   .techicons {
-    padding: 1rem;
+    padding: 2rem;
     margin: 0.6;
-    display: inline-block;
     padding-bottom: 0.5rem;
     text-align: center;
     padding-top: 6rem;
